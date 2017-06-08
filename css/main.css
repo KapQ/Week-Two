@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    margin:  0;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration-color: #0B1942;
+    color: #0B1942;
+    background-color: white;
+    border: 10px rgba( 0,0,0, 0.15 );
+}
+h3{
+  background-color: #0B1942;
+  color: #FFFFFF;
+  justify-content: flex-start;
+}
+.box{
+  background-color: #0B1942;
+}
+.box2{
+  background-color: white;
+}
+.index.html{
+  background-color: #00A5BF;
+}
+.calendar.html{
+  background-color: #00B7D3;
+}
+.join.html{
+  background-color: #00D5E7;
+}
+.nav-bar{
+  background-color: #7DDFE8;
+}
+.logo{
+  background-color: #F5005B;
+}
+h2{
+  background-color: #0B1942;
+  color: #FFFFFF;
+  justify-content: flex-start;
+}
+h4{
+  background-color: #0B1942;
+  color: #FFFFFF;
+  justify-content: flex-start;
+}
+h5{
+  color: #FFFFFF;
+}
+.statement{
+  text-decoration-color: #FFFFFF;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color:#777;
+}
+@media screen and (min-width:320px){
+    .nav-bar a{
+        font-size: 1.2em;
+        display: inline-block;
+    }
+
+    #site_header{
+        border-top: 10px rgba( 0, 0, 0, 0.15 );
+    }
+
+    #content_filter form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #content_filter fieldset{
+        display: block;
+        flex: 0 1 48%;
+    }
+
+@media screen and ( min-width: 545px ) and ( max-width: 768px ){
+
+    #logo{           order: 1; }
+    #main_nav{       order: 2; }
+    #site_header{    order: 3; }
+    #content_filter{ order: 4; }
+    main{            order: 5; }
+    #site_footer{    order: 6; }
+
+    #submit_button{
+        width: 48%;
+        margin-left:  52%;
+    }
+}
+
+@media screen and ( min-width: 769px ){
+    #site_wrapper{
+        padding: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
